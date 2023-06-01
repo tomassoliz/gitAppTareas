@@ -28,6 +28,6 @@ JSON.stringify(tareas, null, 3),"utf-8");
   filtrar: require('./filtrar'),
   agregar: require('./agregar'),
   eliminar: require('./eliminar'),
- // editar: require ('./editar'),
- // mensajeError: require('./mensajeError')
+  editar: require('./editar'),
+  mensajeError: require('./mensajeError')
 };
