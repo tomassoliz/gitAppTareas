@@ -1,5 +1,3 @@
-require("colors");
-
 const mensajeError = function (mensaje) {
     return `ERROR: ${mensaje}`.red;
   }
