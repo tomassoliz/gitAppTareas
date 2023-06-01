@@ -5,10 +5,10 @@ require('colors');
 
 
 const leerJSON = () =>
-  JSON.parse(readFileSync(path.join(__dirname, "tareas.json"), "utf-8"));
+JSON.parse(readFileSync(path.join(__dirname, "tareas.json"), "utf-8"));
 const escribirJSON = (tareas) =>
-  writeFileSync(path.join(__dirname, "tareas.json"),
-  JSON.stringify(tareas, null, 3),"utf-8");
+writeFileSync(path.join(__dirname, "tareas.json"),
+JSON.stringify(tareas, null, 3),"utf-8");
 
   module.exports = {
   tareas: leerJSON(),
@@ -27,8 +27,7 @@ const escribirJSON = (tareas) =>
   },
   filtrar: require('./filtrar'),
   agregar: require('./agregar'),
-  eliminar: require = ('./eliminar'),
-  editar: require = ('/editar'),
-  filtrar: require = ('./filtrarDos'),
-  mensajeError: require = ('./mensajeError')
+  eliminar: require('./eliminar'),
+  editar: require('./editar'),
+  // mensajeError: require('./mensajeError')
 };
