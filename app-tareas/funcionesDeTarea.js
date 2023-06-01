@@ -1,8 +1,6 @@
 const { writeFileSync, readFileSync } = require("fs");
-const Tarea = require("./Tarea");
 const path = require("path");
 require('colors');
-
 
 const leerJSON = () =>
 JSON.parse(readFileSync(path.join(__dirname, "tareas.json"), "utf-8"));
@@ -28,6 +26,6 @@ JSON.stringify(tareas, null, 3),"utf-8");
   filtrar: require('./filtrar'),
   agregar: require('./agregar'),
   eliminar: require('./eliminar'),
-  editar: require ('./editar'),
- // mensajeError: require('./mensajeError')
+  editar: require('./editar'),
+  mensajeError: require('./mensajeError')
 };

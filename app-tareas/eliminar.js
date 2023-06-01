@@ -1,9 +1,5 @@
-
 const { writeFileSync, readFileSync } = require("fs");
-
 const path = require("path");
-
-
 
 const leerJSON = () =>
 JSON.parse(readFileSync(path.join(__dirname, "tareas.json"), "utf-8"));
