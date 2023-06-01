@@ -1,5 +1,8 @@
+
 const { writeFileSync, readFileSync } = require("fs");
+
 const path = require("path");
+
 
 
 const leerJSON = () =>
@@ -18,6 +21,5 @@ const eliminar =  function (titulo) {
     } else {
       return `No se encontró la tarea ${titulo}`;
     }
-  }
-
-module.exports = eliminar;
+}
+module.exports = eliminar

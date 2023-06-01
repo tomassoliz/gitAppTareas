@@ -8,6 +8,5 @@ const editar = function (titulo, nuevoEstado) {
     } else {
       return `No se encontró la tarea ${titulo}`;
     }
-  }
-
-module.exports = editar
+}
+module.exports = editar;
